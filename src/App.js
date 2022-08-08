@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CoinTable from './components/CoinTable.js';
 
