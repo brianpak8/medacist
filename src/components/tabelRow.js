@@ -1,7 +1,6 @@
 import React, {PureComponent} from 'react';
 
 function CoinRow(props) {
-  
   let coins = props.coins.sort((a, b) => parseFloat(b["currentValue"]) - parseFloat(a["currentValue"]));
   return coins.map((coin, idx) => {
     return(

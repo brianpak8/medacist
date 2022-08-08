@@ -25,7 +25,7 @@ export class CoinTable extends PureComponent {
     // get coin data to get an id to search for price data
     axios.get('https://api.exchange.coinbase.com/products').then(function(response) {
       usdProducts = response.data.filter((product) => {
-        if (product.quote_currency === 'USD' && context.state.topTenCoins.includes(product.id)) {
+        if (context.state.topTenCoins.includes(product.id)) {
           return product;
         }
       })
